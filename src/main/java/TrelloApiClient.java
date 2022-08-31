@@ -1,8 +1,7 @@
 import retrofit2.Call;
-import retrofit2.Response;
 import retrofit2.http.*;
 
-    public interface TrelloApi {
+    public interface TrelloApiClient {
 
         @POST("1/boards/")
         Call<Board> createNewBoard(@Query("name") String name, @Query("key") String key, @Query("token") String token);
